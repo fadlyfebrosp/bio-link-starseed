@@ -1,8 +1,10 @@
 export function Footer() {
+  const year = new Date().getFullYear();
+
   return (
-    <p className="text-center text-xs text-gray-400 mt-10 mb-6">
-      Copyright © 2023 <br />
-      Created by Fadly Febro
-    </p>
+    <footer className="mt-auto py-6 text-center text-xs opacity-70">
+      <p>Copyright © {year}</p>
+      <p>Created by Fadly Febro</p>
+    </footer>
   );
 }
